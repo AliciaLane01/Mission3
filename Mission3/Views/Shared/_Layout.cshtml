@@ -14,6 +14,8 @@ Submit a link to the GitHub repository containing your project via Learning Suit
     <meta charset="utf-8" />
     <title>@ViewData["Title"]</title>
     <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -22,15 +24,12 @@ Submit a link to the GitHub repository containing your project via Learning Suit
         <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
     </nav>
 
-    <link href="css/default.css" rel="stylesheet" />
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
     <div>
         @RenderBody()
     </div>
 
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
 
 </body>
 </html>
