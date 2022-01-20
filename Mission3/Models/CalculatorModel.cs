@@ -10,18 +10,18 @@ namespace Mission3.Models
     {
         [Required]
         [Range(0,100)]
-        public float Assignments { get; set; }
+        public int Assignments { get; set; }
         [Required]
         [Range(0, 100)]
-        public float Group_Project { get; set; }
+        public int Group_Project { get; set; }
         [Required]
         [Range(0, 100)]
-        public float Quizzes { get; set; }
+        public int Quizzes { get; set; }
         [Required]
         [Range(0, 100)]
-        public float Exams { get; set; }
+        public int Exams { get; set; }
         [Required]
         [Range(0, 100)]
-        public float INTEX { get; set; }
+        public int INTEX { get; set; }
     }
 }

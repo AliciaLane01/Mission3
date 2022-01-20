@@ -2,10 +2,6 @@
 //using the "Grade Calculator" form entries based on the weights listed in the syllabus.Use
 //jQuery selectors(i.e.the “$”) in your program.
 
-document.getElementById("calculate").addEventListener("click", function () {
-    alert("hello1!");
-})
-
 $("#calculate").click(function () {
     var final_perc = 0;
     var final_grade = '';
@@ -75,6 +71,6 @@ $("#calculate").click(function () {
         final_grade = "E";
     }
 
-    alert("Final grade: " + final_perc + "% " + final_grade);
+    alert("Final grade: " + Math.round(final_perc,2) + "% " + final_grade);
 })
 
