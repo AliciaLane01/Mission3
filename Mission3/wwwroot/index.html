@@ -1,0 +1,66 @@
+﻿<!--Author: Alicia Lane-->
+<!--Build an ASP.NET Web App using the same structure as in the "Building First Web App" series
+of videos. (i.e. Non-MVC for now).
+
+• An icon for the website (displayed on the tab next to the website title)
+(#notcoveredinthevideos)
+
+Submit a link to the GitHub repository containing your project via Learning Suite.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Page!</title>
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+</head>
+<body>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <h1>Alicia Lane</h1>
+
+    <!--picture of me doing something I enjoy!-->
+    <img src="img/painting.jpg" style="width:300px;" alt="Picture of me painting!">
+
+    <p>I am really excited to gain more exposure to development for larger companies! I have only ever worked in small teams and smaller organizations so this will be important experience! I am also glad we are learning a strongly typed language so I can understand how that works and be a more well rounded developer!</p>
+
+    <!--A list of the Top #3 jobs you are most interested in pursuing when you graduate-->
+    <h3>Top 3 Jobs:</h3>
+    <ul>
+        <li>Data Analyst</li>
+        <li>Product Management</li>
+        <li>Developer</li>
+    </ul>
+
+    <!--A "Grade Calculator" form that takes as input a percentage scored for each grade
+    category listed in the syllabus
+    -->
+
+    <h3>Grade Calculator</h3>
+    <p id="help_txt" hidden="hidden">Enter percentage scored for each grade category to calculate final grade.</p>
+    <form>
+        <label>Assignments:</label>             <!--add padding to label in css-->
+        <input id="assigns" type="number" />
+        <br />
+        <label>Group Project:</label>
+        <input id="grp_proj" type="number" />
+        <br />
+        <label>Quizzes:</label>
+        <input id="quizzes" type="number" />
+        <br />
+        <label>Exams:</label>
+        <input id="exams" type="number" />
+        <br />
+        <label>INTEX:</label>
+        <input id="intex" type="number" />
+        <br />
+        <input type="button" id="calculate" value="Calculate Final Grade" />
+        <input type="button" id="help" value="?" />   <!--use to display the help txt (toggle)-->
+    </form>
+
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!--Author: Alicia Lane-->
+<!--Build an ASP.NET Web App using the same structure as in the "Building First Web App" series
+of videos. (i.e. Non-MVC for now).
+
+• An icon for the website (displayed on the tab next to the website title)
+(#notcoveredinthevideos)
+
+Submit a link to the GitHub repository containing your project via Learning Suite.-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+
+</head>
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
