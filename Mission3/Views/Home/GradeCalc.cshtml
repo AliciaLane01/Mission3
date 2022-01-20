@@ -5,30 +5,31 @@
     ViewData["Title"] = "Grade Calculator";
 }
 
+@model CalculatorModel;
 <!--A "Grade Calculator" form that takes as input a percentage scored for each grade
 category listed in the syllabus
 -->
 
 <h3>Grade Calculator</h3>
 <p id="help_txt" hidden="hidden">Enter percentage scored for each grade category to calculate final grade.</p>
-<form>
+<form method="post">
     <label>Assignments:</label>             <!--add padding to label in css-->
-    <input id="assigns" type="number" />
+    <input id="assigns" asp-for="Assignments" />
     <br />
     <label>Group Project:</label>
-    <input id="grp_proj" type="number" />
+    <input id="grp_proj" asp-for="Group_Project"/>
     <br />
     <label>Quizzes:</label>
-    <input id="quizzes" type="number" />
+    <input id="quizzes" asp-for="Quizzes"/>
     <br />
     <label>Exams:</label>
-    <input id="exams" type="number" />
+    <input id="exams" asp-for="Exams"/>
     <br />
     <label>INTEX:</label>
-    <input id="intex" type="number" />
+    <input id="intex" asp-for="INTEX"/>
     <br />
-    <input type="button" id="calculate" value="Calculate Final Grade" />
-    <input type="button" id="help" value="?" />   <!--use to display the help txt (toggle)-->
+    <input id="calculate" type="submit" value="Calculate Final Grade" />
+    <input id="help" type="button" value="?" />   <!--use to display the help txt (toggle)-->
+    <div asp-validation-summary="All"></div>
 </form>
-
 <script src="js/functions.js"></script>

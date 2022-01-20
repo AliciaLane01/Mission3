@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mission3.Models;
 
 namespace Mission3.Controllers
 {
@@ -13,7 +14,14 @@ namespace Mission3.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult GradeCalc()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GradeCalc (CalculatorModel model)
         {
             return View();
         }
